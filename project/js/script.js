@@ -76,9 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.delete').forEach((btn, i) => {
             btn.addEventListener('click',() => {
                 btn.parentElement.remove();
-                console.log("yes");
                 movieDB.movies.splice(i, 1);
-                console.log(movieDB.movies);
+                moviesDisplay();
             });
         });
     }
